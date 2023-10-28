@@ -1,29 +1,23 @@
-# Web Development Project 5 - Weather Dash
+# Web Development Project 6 - Weather Dash
 
 Submitted by: Carlos Ortiz
 
-This web app: It gives the weather forecast for the upcoming 14 days as well as it gives statistics about the current weather.
+This web app: Gives you more information and infographics on data observed
 
-Time spent: 8 hours spent in total
+Time spent: 10 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [ ] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] City
-  - [x] Current Temperature
-  - [x] Weather Conditions
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
@@ -33,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./Kapture.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
@@ -48,11 +42,11 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
-I encountered challenges in calling the API function, in using UseEffect and thus resulted in calling it only when it click the button.
+I had a really hard time with the charts and displaying the data. I was able to get the graph as you can see but the data seems to be invisble/not showing for some reason.
 
 ## License
 
-    Copyright 2023 Carlos Ortiz
+    Copyright [2023] [Carlos Ortiz]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -65,4 +59,3 @@ I encountered challenges in calling the API function, in using UseEffect and thu
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-# Weather_Dash
