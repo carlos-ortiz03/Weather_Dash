@@ -60,9 +60,14 @@ body {
 
 
 
+.right-panel {
+  flex: 3; /* Takes up 3/4 of the remaining screen width */
+  margin: auto;
+  margin-right: 20px;
+  height: 90vh;
+}
 
-
-.main-container {
+.right-panel-search {
   flex: 3; /* Takes up 3/4 of the remaining screen width */
   margin: auto;
   margin-right: 20px;
@@ -97,6 +102,7 @@ body {
   padding: 15px 20px;
   background-color: #0077CC;
   color: white;
+  text-decoration: none;
   font-size: 20px;
   border: none;
   border-radius: 5px;
@@ -109,7 +115,7 @@ body {
 }
 
 /* Right panel, taking up 3/4 of the remaining screen width with a right margin of 20px */
-.right-panel {
+.right-panel-dashboard {
   flex: 3; /* Takes up 3/4 of the remaining screen width */
   margin: auto;
   margin-right: 20px;
@@ -151,6 +157,24 @@ body {
   margin-right: 20px;
   color: white;
   text-align: center;
+}
+
+.chart-container {
+  margin-top: 20px; /* Add margin to separate the chart from the data */
+  overflow: hidden; /* Prevent overflowing content */
+  clear: both; /* Clear both sides (above and below) */
+}
+
+.chart-container {
+  position: relative; /* Ensure relative positioning */
+  width: 100%; /* Adjust the width to your desired size */
+  height: 300px; /* Adjust the height to your desired size */
+}
+
+/* If you want to center the chart horizontally */
+.chart-container canvas {
+  display: block;
+  margin: 0 auto;
 }
 
 .credits {

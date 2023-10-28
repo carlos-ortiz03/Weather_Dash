@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import NavBar from './components/NavBar';
 
 function App() {
-  const [windowIndex, setWindowIndex] = useState(1);
   const [currentWeather, setCurrentWeather] = useState(null);
   const [weatherForecast, setWeatherForecast] = useState(null);
 
@@ -31,25 +31,26 @@ function App() {
   };
 
   const handleSearch = (location) => {
-    setWindowIndex(0);
+    console.log("hi")
     fetchCurrentWeather(location);
     fetchWeatherForecast(location);
   };
 
-  const handleNavClick = (index) => {
-    setWindowIndex(index);
-  }
+
 
 
 
   return (
-    <div className="container">
-      <div className="left-panel">
-        <h1 className='title'>Weather Dash</h1>
-        <NavBar handleNavClick={handleNavClick}/>
+    <BrowserRouter>
+      <div className="container">
+        <div className="left-panel">
+          <h1 className='title'>Weather Dash</h1>
+          <NavBar />
+        </div>
+        <MainPage handleSearch={handleSearch} weatherForecast={weatherForecast} currentWeather={currentWeather}/>
       </div>
-      <MainPage windowIndex={windowIndex} handleSearch={handleSearch} weatherForecast={weatherForecast} currentWeather={currentWeather}/>
-    </div>
+    </BrowserRouter>
+    
   );
 }
 

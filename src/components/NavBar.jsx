@@ -1,18 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({handleNavClick}) => {
   return (
     <nav className="navbar">
       <ul className="nav-list">
-        <li onClick={(e) => handleNavClick(0)} className="nav-item">
-            <h3>Dashboard</h3>
-        </li>
-        <li onClick={(e) => handleNavClick(1)} className="nav-item">
-            <h3>Search</h3>
-        </li>
-        <li onClick={(e) => handleNavClick(2)} className="nav-item">
-            <h3>About</h3>
-        </li>
+        <Link to="/dashboard" className="nav-item">Dashboard</Link>
+        <Link to="/search" className="nav-item">Search</Link>
+        <Link to="/about" className="nav-item">About</Link>
       </ul>
     </nav>
   );
